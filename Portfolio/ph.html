@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rongali Lahari - Portfolio</title>
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="c.css" />
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="#" class="nav__logo">Rongali Lahari</a></div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle"><i class='bx bx-menu'></i></div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="l-main">
+
+    <!-- ===== HOME ===== -->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Rongali Lahari</span><br>AI & ML Enthusiast</h1>
+        <a href="file:///C:/Users/lahar/Downloads/Resume.pdf" class="button" download>Resume/CV</a>
+      </div>
+
+      <div class="home__social">
+        <a href=" https://www.linkedin.com/in/lahari-rongali-83b86a293/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/laharirongali" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+        <a href="https://laharirongali@gmail.com" class="home__social-icon"><i class='bx bx-mail-send' ></i></a>
+      </div>
+
+      <div class="home__img">
+        <img class="home__blob-img" src="L1.jpg" alt="Profile Image" />
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="L2.jpg" alt="About Image" />
+        </div>
+        <div>
+          <h2 class="about__subtitle">I'm Rongali Lahari</h2>
+          <p class="about__text">
+            I am an AI & ML enthusiast pursuing B.Tech in Artificial Intelligence and Machine Learning at SRKR Engineering College. I specialize in Python, SQL, React, and ML libraries (Pandas, NumPy, scikit-learn), with proven experience from internships at Blackbucks and Google AI/ML.
+            <br><br>
+            I've developed high-accuracy ML models including a T20 cricket score predictor (84.06% accuracy) and a Home Loan Prediction system using Random Forest, XGBoost, and other algorithms. My full-stack capabilities are demonstrated through projects like a Travel Tourism Web Application with React and SQL integration.
+            <br><br>
+            I am an enthusiastic and adaptable individual with a passion for learning and solving problems. I enjoy working collaboratively and continuously exploring emerging technologies. I seek a role that challenges me, promotes creativity, and supports both personal and professional development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Professional Skills</h2>
+          <p class="skills__text">Proficient in Python, SQL, HTML, CSS, React, and ML libraries like Pandas, NumPy, and Scikit-learn. Experienced in building predictive models, web apps, and solving data problems.</p>
+
+          <!-- Skill Items -->
+          <div class="skills__data">
+            <div class="skills__names"><i class='bx bxl-python skills__icon'></i><span>Python</span></div>
+            <div class="skills__bar skills__python"></div><span>70%</span>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names"><i class='bx bx-data skills__icon'></i><span>SQL</span></div>
+            <div class="skills__bar skills__sql"></div><span>50%</span>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names"><i class='bx bxl-html5 skills__icon'></i><span>HTML</span></div>
+            <div class="skills__bar skills__html"></div><span>70%</span>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names"><i class='bx bxl-css3 skills__icon'></i><span>CSS</span></div>
+            <div class="skills__bar skills__css"></div><span>70%</span>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names"><i class='bx bxl-react skills__icon'></i><span>React</span></div>
+            <div class="skills__bar skills__react"></div><span>50%</span>
+          </div>
+        </div>
+         <div>              
+            <img src="L6.png" alt="" class="skills__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & EXPERIENCE ===== -->
+    <div id="edu">
+  <div class="cont">
+    <div class="row">
+      <div class="col1">
+        <img src="edu.jpg" alt="education">
+      </div>
+      <div class="col2">
+        <u><h1>Education & Experience</h1></u>
+        <div class="tab-titles">
+          <div class="tab-links" onclick="opentab('Experience')">Experience</div>
+          <div class="tab-links active-link" onclick="opentab('Education')">Education</div>
+        </div>
+
+        <!-- Education Tab Active -->
+        <div class="tab-contents active-tab" id="Education">
+          <ul>
+            <li><span>2025 - Present</span><br>SRKR Engineering College<br>
+              B.Tech in CSE (AI & ML)<br>Current CGPA: 9.10</li>
+            <li><span>2020 - 2022</span><br>Tirumala Junior College<br>
+              Inter in MPC<br>Overall Percentage: 93.8%</li>
+            <li><span>2020</span><br>CBSE – 10th Class<br>Percentage: 83%</li>
+          </ul>
+        </div>
+
+        <!-- Experience Tab Inactive -->
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>August 2024 - Sept 2024</span><br>Google AI/ML Virtual Internship (EduSkills)</li>
+            <li><span>June 2024 - July 2024</span><br>ML Internship at Blackbucks – Cricket Score Prediction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+      <!-----------my work------>
+             <section class="work section" id="work">
+                <h2 class="section-title">My Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://www.hackerrank.com/profile/24A35A4204" class="work__img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmSiM5yF6mVFUr6FlPBTBhNRySVk00xIzZ5g&s" alt="hackerrank">
+                    </a>
+                    <a href="https://leetcode.com/u/Karthik_878/" class="work__img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy6r4eLJ9hQCssvebXbpB5M99_0J3Lv67rZA&s" alt="GeeksforGeeks">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gowthamkarthik" class="work__img">
+                        <img src="L3.png" alt="linkedin"><h3>LinkedIn</h3>
+                    </a>
+                </div>
+            </section>
+
+    
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="work section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="work__container bd-grid">
+        <a href="https://github.com/laharirongali/IPL-Score Prediction-app" class="work__img" target="_blank">
+          <img src="L5.png" alt="IPL Score Prediction App"><h3>IPL Score Prediction App</h3>
+        </a>
+        <a href="https://github.com/laharirongali/home-loan-prediction" class="work__img" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebmbTPAZp68lVZYH5RI0515IXMRtGGVXxxA&s" alt="Home Loan Prediction"><h3>Home Loan Prediction</h3>
+        </a>
+         <a href="https://github.com/laharirongali/travel-tourism-app" class="work__img" target="_blank">
+          <img src="L4.png" alt="Travel App"><h3>Travel Tourism Web App</h3>
+        </a>
+        <a href="#home" class="work__img">
+          <img src="L7.png" alt=""><h3>Portfolio Website</h3>
+          </a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bd-grid">
+        <form name="submit-to-google-sheet" class="contact__form">
+          <input name="Name" type="text" placeholder="Your Name" class="contact__input" required />
+          <input name="Email" type="email" placeholder="Your Email" class="contact__input" required />
+          <textarea name="Message" rows="6" placeholder="Your Message" class="contact__input" required></textarea>
+          <button type="submit" class="button contact__button">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p class="footer__title">Rongali Lahari</p>
+    <div class="footer__social">
+      <a href="https://linkedin.com/in/lahari-rongali" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/laharirongali" class="footer__icon"><i class='bx bxl-github'></i></a>
+ <a href="https://mailto:laharirongali@gmail.com" class="footer__icon"><i class='bx bx-mail-send' ></i></a>    </div>
+    <p class="footer__copy">© 2025 Rongali Lahari. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Google Sheet Script (Optional) ===== -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(() => alert('Message sent successfully!'))
+        .catch(err => console.error('Error!', err.message));
+    });
+  </script>
+
+  <!-- ===== Main JS ===== -->
+  <script src="main.js"></script>
+
+</body>
+</html>
